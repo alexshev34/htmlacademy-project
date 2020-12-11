@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'balqis';
+    src: url('../fonts/balqis.woff2') format('woff2'),
+         url('../fonts/balqis.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 21px;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.main-header{
+    background-image: url(../img/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100vh;
+    
+}
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+}
+
+.main-menu{
+    display: flex;
+}
+
+.main-menu li{
+    list-style: none;
+}
+
+.main-menu-item + .main-menu-item{
+    margin-left: 52px;
+}
+
+.main-menu li a{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.main-menu-link:hover{
+    text-decoration: underline;
+}
+
+.tel{
+    padding-left: 40px;
+    position: relative;
+}
+
+.tel::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/phone.svg);
+    width: 30px;
+    height: 30px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-title{
+    padding-top: 152px;
+    text-align: center;
+    font-size: 250px;
+    line-height: 334px;
+    font-family: 'balqis';
+    font-weight: 300;
+}
+
+.header-title span{
+    display: block;
+    font-size: 56px;
+    line-height: 66px;
+    text-align: right;
+    font-family: Roboto Condensed;
+    font-style: italic;
+    margin-top: -66px;
+    margin-right: 85px;
+}

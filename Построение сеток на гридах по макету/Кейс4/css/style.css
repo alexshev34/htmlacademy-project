@@ -1,0 +1,283 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.grid-wrapper{
+	display: grid;
+	grid-template-columns: 260px 1fr 360px;
+	grid-template-areas: "h h h" "a c b";
+}
+
+.main-header{
+	grid-area: h;
+	background-color: #ecf2ff;
+}
+
+.main-menu{
+	grid-area: a;
+}
+
+.content{
+	grid-area: c;
+}
+
+.price{
+	grid-area: b;
+}
+
+.main-header-wrapper{
+	display: flex;
+	align-items: center;
+}
+
+.main-logo{
+	margin-left: 60px;
+	margin-right: 102px;
+	padding: 20px 0 20px;
+}
+
+.bread-crumbs-link{
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 40px;
+	position: relative;
+}
+
+.bread-crumbs-link:not(:last-child)::after{
+	content: ">";
+	width: 10px;
+	height: 6px;
+	position: absolute;
+	right: -26px;
+}
+
+.cinema-select{
+	margin-left: 240px;
+}
+.cinema-select select{
+	font-family: Montserrat, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+
+	text-transform: uppercase;
+
+	color: #5957DB;
+
+	background: #fff;
+	border: 2px solid #FFFFFF;
+	border-radius: 8px;
+	padding: 14px 50px 14px 24px;
+	appearance: none;
+
+	position: relative;
+}
+
+.cinema-info::after{
+	content: "";
+	background-image: url(../img/select-icon.svg);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 10px;
+
+	position: absolute;
+	top: 10px;
+	z-index: 2;
+}
+
+.main-menu{
+	width: 258px;
+	max-height: 920px;
+	background-color: #5957db;
+}
+
+.menu-nav-list{
+	list-style: none;
+}
+
+.menu-nav-item{
+	margin-left: 90px;
+}
+
+.menu-nav-item:nth-child(1){
+	margin-top: 43px;
+	position: relative;
+}
+
+.menu-nav-item:nth-child(1)::before{
+	content: "";
+	position: absolute;
+	background-image: url(../img/ticket.svg);
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 22px;
+	left: -34px;
+}
+
+.menu-nav-item:nth-child(2){
+	position: relative;
+}
+
+.menu-nav-item:nth-child(2)::before{
+	content: "";
+	position: absolute;
+	background-image: url(../img/trailer.svg);
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 22px;
+	left: -34px;
+}
+
+.menu-nav-item:nth-child(3){
+	position: relative;
+}
+
+.menu-nav-item:nth-child(3)::before{
+	content: "";
+	position: absolute;
+	background-image: url(../img/news.svg);
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 22px;
+	left: -34px;
+}
+
+.menu-nav-item:nth-child(4){
+	position: relative;
+}
+
+.menu-nav-item:nth-child(4)::before{
+	content: "";
+	position: absolute;
+	background-image: url(../img/info.svg);
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 22px;
+	left: -34px;
+}
+
+.menu-nav-item:nth-child(5){
+	position: relative;
+}
+
+.menu-nav-item:nth-child(5)::before{
+	content: "";
+	position: absolute;
+	background-image: url(../img/contact.svg);
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 22px;
+	left: -34px;
+}
+
+.menu-nav-item:not(:last-child){
+	margin-bottom: 46px;
+}
+
+.menu-nav-link{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.account{
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+
+	margin-top: 515px;
+	margin-left: 112px;
+	padding-bottom: 62px;
+	color: #fff;
+}
+
+.content-data-wrapper{
+	margin-top: 60px;
+	display: flex;
+}
+
+.content-data{
+	width: 300px;
+	height: 120px;
+	background-color: #ecf2ff;
+	border-radius: 8px;
+	text-align: center;
+	margin-right: 30px;
+}
+
+.content-data-number{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+
+	color: #5957db;
+}
+
+.content-data:nth-child(1){
+	margin-left: 170px;
+}
+
+.content-data-day{
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #5957db;
+}
+
+.data-wrapper{
+	display: flex;
+	align-items: center;
+	margin-top: 60px;
+	margin-left: 62px;
+}
+
+.data-wrapper:nth-child(2){
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	margin-left: 62px;
+}
+
+.data-view{
+	margin-right: 83px;
+}
+
+.data-time{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+
+	width: 190px;
+	height: 60px;
+	border-radius: 30px;
+	text-align: center;
+	padding-top: 20px;
+	background-color: #ecf2ff;
+
+	color: #5957db;
+}
+
+.data-time:not(:last-child){
+	margin-right: 30px;
+}
+
+.monitor{
+	margin-top: 80px;
+	margin-left: 62px;
+}

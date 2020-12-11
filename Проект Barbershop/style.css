@@ -1,0 +1,24 @@
+.menu1{
+	list-style: none;
+}
+.menu{
+	display: inline-block;
+	padding-top: 30px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+}
+.entry{
+	float: right;
+}
+.menu a{
+	font-family: "PT Sans", "Verdana";
+	font-size: 21px;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+div{
+	width: 100%;
+	height: 70px;
+	background-color: #000000;
+}
